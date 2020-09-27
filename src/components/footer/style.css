@@ -1,0 +1,34 @@
+.main-footer{
+    width: 100%;
+    height: 200px;
+    background: #cccccc;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-footer_listas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section.lista {
+    color: #14213d;
+    margin: 25px 50px;
+}
+
+.lista-titulo {
+    margin: 10px 0 10px 5px;
+}
+
+li {
+    list-style-type: none;
+    margin: 5px;
+}
+
+li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
