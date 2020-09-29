@@ -40,7 +40,8 @@ const Footer = () => (
                     <li>Política de troca e devoluçao</li>
                 </ul> 
                </section>   
-</section>
+            </section>
+            
                 <section className="redes-sociais">
                     <h1 className="redes-sociais_titulo">Redes Sociais</h1>
                     <div className="redes-sociais_icones">

@@ -16,7 +16,7 @@ function CardLivro(props) {
             </div>
             <div>
                 <Link to={'/livro/'+props.id}>
-                <h1 className="titulo">{props.titulo}</h1>
+                <h1 className="titulo-card">{props.titulo}</h1>
                 </Link>
             </div>
             <div>

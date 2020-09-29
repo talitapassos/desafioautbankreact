@@ -7,6 +7,7 @@
     display: grid;
     align-items: center;
 }
+
 .grid-template-columns-4{
 	grid-template-columns: 1fr 6fr 3fr 1fr;
 }
@@ -21,9 +22,11 @@
     padding: 0 8px;
     width: 50%;
 }
+
 .quantidade:first-child{
         padding-right: 20px;
 }
+
 .quantidade input {
     min-width: 20px;
     max-width: 30px;
@@ -37,6 +40,7 @@
     right: -6px;
 
 }
+
 .quantidade span{
 }
 
@@ -57,11 +61,11 @@
     font-size: 24px;
 }
 
-
 .quantidade .btnQtd:hover{
     background: rgba(0, 0, 0, 0.12);
     border-radius: 5px;
 }
+
 .totalCompra{
     display: flex;
     flex-direction: column;
@@ -72,7 +76,6 @@
     min-height: 53vh;
     margin: 0 6rem;
 }
-
 
 .botao-finalizar {
     width: 100%;

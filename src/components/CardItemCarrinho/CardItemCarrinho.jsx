@@ -15,20 +15,20 @@ function CardItemCarrinho({ img, titulo, autor, preco, id, qtd }) {
                 </div>
                 <section>
                     <div>
-                        <h1 class="tituloMin">{titulo}</h1>
+                        <h1 className="titulo-min">{titulo}</h1>
                     </div>
                     <div>
                         <p>{autor}</p>
                     </div>
                 </section>
-                    <div className="quantidade">
-                        <button className="btnQtd" onClick={() => subQtdLivro(id)}><span>-</span></button>
-                        <input type="number" min="1" value={qtd} onChange={(val) => alteraQtdLivro(id, Number(val.target.value))} disabled></input>
-                        <button  className="btnQtd"  onClick={() => addQtdLivro(id)}><span>+</span></button>
-                    </div>
-                    <div>
-                        <h2>{formataValor(preco * qtd)}</h2>
-                    </div>
+                <div className="quantidade">
+                    <button className="botao-qtd" onClick={() => subQtdLivro(id)}><span>-</span></button>
+                    <input type="number" min="1" value={qtd} onChange={(val) => alteraQtdLivro(id, Number(val.target.value))} disabled></input>
+                    <button  className="botao-qtd"  onClick={() => addQtdLivro(id)}><span>+</span></button>
+                </div>
+                <div>
+                    <h2>{formataValor(preco * qtd)}</h2>
+                </div>
             </section>
         </div>
     )

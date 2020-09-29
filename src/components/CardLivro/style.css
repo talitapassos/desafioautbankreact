@@ -30,9 +30,9 @@
     justify-content: center;
     align-items: center;
     
+    color: #0A0A0A;
     border: 1px solid #000;
     border-radius: 5px;
-    color: #0A0A0A;
     font-weight: 600;
     font-size: 1.2rem;
     text-align: left;
@@ -40,14 +40,14 @@
 }
 
 .botao-comprar:hover {
-    cursor: pointer;
-    text-decoration: none;
+    color:  #0A0A0A;
     background-color:#ffaf00;
     border-color: #ffaf00;
-    color:  #0A0A0A;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.titulo{
+.titulo-card{
     font-size: 18px;
     margin: 10px 0px 5px;
     text-align: center;
@@ -55,7 +55,7 @@
     cursor: pointer;
 }
 
-.titulo:hover{
+.titulo-card:hover{
     text-decoration:underline;
 }
 

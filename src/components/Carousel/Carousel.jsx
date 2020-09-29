@@ -8,7 +8,7 @@ export default function CarouselComponent() {
 
         <>
         <section>
-            <Carousel autoplay >
+            <Carousel autoplay>
                 {images.map((image)=>(
                     <div><h3 className="content-style"><img className="image-style" src={image}></img> </h3></div>)
                     )}

@@ -3,6 +3,7 @@
     height: 200px;
     background: #cccccc;
     margin-top: 30px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,11 +14,13 @@
     flex-direction: row;
     justify-content: center;
 }
+
 .main-footer_infos{
     display: flex;
     flex-direction: row;
 }
-section.lista {
+
+.lista {
     color: #14213d;
     margin: 25px 50px;
 }
