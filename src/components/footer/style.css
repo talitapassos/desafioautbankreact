@@ -46,6 +46,11 @@ li:hover {
     
     color: #14213d;
 }
+
+.redes-sociais_titulo{
+    color:#14213d
+}
+
 .main-footer_container{
     display:flex;
     width: 100%;
