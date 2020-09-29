@@ -2,4 +2,11 @@
     margin-top: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+
+.ant-carousel .slick-track .slick-slide:only-child {
+    margin-left: 28.5% !important;
+  }

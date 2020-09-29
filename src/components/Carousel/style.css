@@ -1,0 +1,13 @@
+.image-style{
+    height:280px;
+    width:100%;
+}
+
+
+.content-style{
+    height: 280px;
+    color: #fff;
+    line-height: 160px;
+    text-align: center;
+    cursor: pointer;
+  };   

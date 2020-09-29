@@ -1,5 +1,12 @@
 import React from 'react';
 import './style.css';
+import {
+    FacebookFilled,
+    TwitterSquareFilled,
+    InstagramFilled,
+    YoutubeFilled
+  } from '@ant-design/icons'
+
 
 const Footer = () => (
     <footer className="main-footer">
@@ -32,9 +39,17 @@ const Footer = () => (
                     <li>Política de privacidade</li>
                     <li>Política de troca e devoluçao</li>
                 </ul> 
-               </section>                
-              
-            </section>
+               </section>   
+</section>
+                <section className="redes-sociais">
+                    <h1 className="redes-sociais_titulo">Redes Sociais</h1>
+                    <div className="redes-sociais_icones">
+                    <FacebookFilled  className="svg"/>
+                    <TwitterSquareFilled  className="svg"/>
+                    <InstagramFilled  className="svg"/>
+                    <YoutubeFilled  className="svg"/>
+                    </div>
+                </section>    
         </div>
     </footer>
 );

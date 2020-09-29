@@ -5,18 +5,26 @@ import Header from '../components/header'
 import ListaProvider from '../context/listaCompra'
 import Carrinho from '../pages/carrinho'
 import Home from '../pages/home'
+import LivroDescricao from '../pages/livroDescricao'
 import './style.css'
+
+const style= {
+    height: '85%'
+}
 
 function Routes() {
     return (
         <ListaProvider>
             <Header />
-            <div className="contentSample">
-                <Switch>
+            <>
+                <Switch style={style}>
                     <Route path='/' exact component={Home} />
-                    <Route path='/carrinho' component={Carrinho} />
+                    <Route  tyle={style} path='/carrinho' component={Carrinho} />
+                    <Route path='/livro/:id' render={(props) => {
+                    return ( <LivroDescricao {...props } />)
+                }} />
                 </Switch>
-            </div>
+            </>
             <Footer />
         </ListaProvider>
     )

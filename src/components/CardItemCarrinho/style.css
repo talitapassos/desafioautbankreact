@@ -1,0 +1,13 @@
+
+.tituloMin{
+    font-size: 18px;
+    margin: 10px -1px 5px;
+    text-align: start;
+    color: #292929;
+    cursor: pointer;
+}
+
+.btnQtd span{
+    position: relative;
+    top: 3px;
+}

@@ -1,4 +1,5 @@
 import React from 'react'
+import './style.css'
 import { useListaCompra } from '../../context/listaCompra'
 import { formataValor, intl } from '../../utils/intl'
 
@@ -14,16 +15,17 @@ function CardItemCarrinho({ img, titulo, autor, preco, id, qtd }) {
                  </div>
                  <section>
                      <div>
-                         <h1 class="titulo">{titulo}</h1>
+                         <h1 class="tituloMin">{titulo}</h1>
                      </div>
                      <div>
                          <p>{autor}</p>
                      </div>
                  </section>
-                 <div className="quantityInputBox">
-                     <span onClick={() => subQtdLivro(id)}>-</span>
-                     <input type="number" min="1" value={qtd} onChange={(val) => alteraQtdLivro(id, Number(val.target.value))}></input>
-                     <span onClick={() => addQtdLivro(id)}>+</span>
+                 <div className="quantidade">
+                     
+                     <button className="btnQtd" onClick={() => subQtdLivro(id)}><span>-</span></button>
+                     <input type="number" min="1" value={qtd} onChange={(val) => alteraQtdLivro(id, Number(val.target.value))} disabled></input>
+                     <button  className="btnQtd"  onClick={() => addQtdLivro(id)}><span>+</span></button>
                  </div>
                  <div>
                     <h2>{formataValor(preco * qtd)}</h2>
