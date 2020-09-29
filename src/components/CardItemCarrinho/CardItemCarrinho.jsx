@@ -1,7 +1,7 @@
 import React from 'react'
-import './style.css'
 import { useListaCompra } from '../../context/listaCompra'
 import { formataValor, intl } from '../../utils/intl'
+import './style.css'
 
 function CardItemCarrinho({ img, titulo, autor, preco, id, qtd }) {
 

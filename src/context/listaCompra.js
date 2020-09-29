@@ -1,10 +1,11 @@
-import React, {createContext, useState,useContext } from 'react';
+import React, { createContext, useState, useContext } from 'react';
 
  const ListaCompraContext = createContext();
 
 
-export default function ListaProvider({ children}){
+export default function ListaProvider({ children }){
     const  [listaCompra, setListaCompra] = useState([]);
+    
     function addLivroCarrinho (livro) {
         const posicaoLivro = listaCompra.findIndex(item=> livro.id==item.id);
         if( posicaoLivro != -1){

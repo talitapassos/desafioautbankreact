@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import images from './CarouselService'
+import images from '../../services/CarouselService';
 import { Carousel } from 'antd';
 import './style.css'
 

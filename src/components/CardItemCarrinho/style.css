@@ -15,6 +15,7 @@
 
 .titulo-min{
     font-size: 18px;
+    font-weight: 600;
     margin: 10px -1px 5px;
     color: #292929;
     text-align: start;
@@ -44,6 +45,25 @@
     
     position: relative;
     cursor: pointer;
+}
+
+.botao-qtd:hover{
+    background: rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+}
+
+.quantidade input {
+    min-width: 20px;
+    max-width: 30px;
+    margin: 2px;
+    height: 35px;
+    border: none;
+    background: none;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    right: -6px;
+
 }
 
 .botao-qtd span{

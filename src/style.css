@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-body, input, button {
-    font: 16px Gill Sans MT
-}
-
 p {
     margin-top: 0;
     margin-bottom: 0 !important;

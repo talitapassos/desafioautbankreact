@@ -6,7 +6,6 @@ import ListaProvider from '../context/listaCompra'
 import Carrinho from '../pages/carrinho'
 import Home from '../pages/home'
 import LivroDescricao from '../pages/livroDescricao'
-import './style.css'
 
 const style= {
     height: '85%'

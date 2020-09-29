@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-
-import "./style.css"
 import api from '../../services/api'
 import CardLivro from '../../components/CardLivro'
 import  CarouselComponet from '../../components/Carousel';
-
+import "./style.css"
 
 const listaLivros = api.getLivros(); 
 

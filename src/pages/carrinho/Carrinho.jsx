@@ -38,8 +38,9 @@ function Carrinho () {
 
 function calculaDesconto(lista){
     const listaLivrosUnicos = [...new Set(lista)].length;
+
     let desconto = 0;
-    console.log('qtd',listaLivrosUnicos)
+    
     if(listaLivrosUnicos> 0 && listaLivrosUnicos < 4)desconto =(listaLivrosUnicos-1)*0.05;
 
     else if(listaLivrosUnicos <=5)desconto = listaLivrosUnicos*0.05;
@@ -47,12 +48,12 @@ function calculaDesconto(lista){
     else if(listaLivrosUnicos > 5)desconto = 0.25;
     
     const valorTotal = lista.reduce((total,{preco, qtd})=>{
-            console.log(preco,'total', total);
+            
             return total + preco * qtd;
     },0);
     
     return {valorTotal,desconto}
 
-
 }
+
 export default Carrinho;
