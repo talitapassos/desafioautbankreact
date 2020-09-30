@@ -47,6 +47,10 @@ export default function ListaProvider({ children }){
         setListaCompra(livroQtd)
     }
 
+    function deletaLivro(livroId) {
+        setListaCompra(listaCompra.filter(livro => livro.id != livroId))
+    }
+
     
 
     return <ListaCompraContext.Provider value={
@@ -56,7 +60,8 @@ export default function ListaProvider({ children }){
          addLivroCarrinho,
          addQtdLivro,
          subQtdLivro,
-         alteraQtdLivro
+         alteraQtdLivro,
+         deletaLivro
         }
     }>{children}</ListaCompraContext.Provider>
 }
@@ -64,6 +69,6 @@ export default function ListaProvider({ children }){
 
 export function useListaCompra(){
     const context = useContext(ListaCompraContext)  
-    const { listaCompra, setListaCompra, addLivroCarrinho, addQtdLivro, subQtdLivro, alteraQtdLivro} = context;
-    return { listaCompra, setListaCompra, addLivroCarrinho, addQtdLivro, subQtdLivro, alteraQtdLivro};
+    const { listaCompra, setListaCompra, addLivroCarrinho, addQtdLivro, subQtdLivro, alteraQtdLivro, deletaLivro} = context;
+    return { listaCompra, setListaCompra, addLivroCarrinho, addQtdLivro, subQtdLivro, alteraQtdLivro, deletaLivro};
 }

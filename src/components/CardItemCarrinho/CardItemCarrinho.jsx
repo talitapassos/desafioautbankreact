@@ -1,14 +1,15 @@
 import React from 'react'
 import { useListaCompra } from '../../context/listaCompra'
 import { formataValor, intl } from '../../utils/intl'
+import { DeleteFilled } from '@ant-design/icons'
 import './style.css'
 
 function CardItemCarrinho({ img, titulo, autor, preco, id, qtd }) {
 
-    const {addQtdLivro, subQtdLivro, alteraQtdLivro} = useListaCompra()
+    const {addQtdLivro, subQtdLivro, alteraQtdLivro, deletaLivro} = useListaCompra()
 
     return (
-        <div>
+        <div className="lista-compra">
             <section className="card-livro_carrinho  grid-template-columns-4">
                 <div>
                     <img id="img-livro" src={img} alt={titulo}></img>
@@ -28,7 +29,10 @@ function CardItemCarrinho({ img, titulo, autor, preco, id, qtd }) {
                 </div>
                 <div>
                     <h2>{formataValor(preco * qtd)}</h2>
-                </div>
+                </div>                
+            </section>
+            <section className="delete" onClick={() => deletaLivro(id) }>
+            <DeleteFilled />
             </section>
         </div>
     )
