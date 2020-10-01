@@ -9,6 +9,7 @@ function LivroDescricao (props) {
     const {addLivroCarrinho} = useListaCompra();
 
     const { match } = props
+    console.log(match)
     const livroDetalhe = api.getLivros().filter(livro => livro.id == match.params.id)[0]
     return (   
             <>

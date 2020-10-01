@@ -37,7 +37,8 @@ function Carrinho () {
  
 
 function calculaDesconto(lista){
-    const listaLivrosUnicos = [...new Set(lista)].length;
+    
+    const listaLivrosUnicos = lista.length;
 
     let desconto = 0;
     

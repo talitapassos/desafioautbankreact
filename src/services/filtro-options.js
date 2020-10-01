@@ -2,7 +2,7 @@ import api from './api'
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const dados = api.getLivros();
+const dados = api.getLivros();  
 
 const itemStyle ={
 

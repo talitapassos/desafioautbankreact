@@ -27,12 +27,13 @@ function CardItemCarrinho({ img, titulo, autor, preco, id, qtd }) {
                     <input type="number" min="1" value={qtd} onChange={(val) => alteraQtdLivro(id, Number(val.target.value))} disabled></input>
                     <button  className="botao-qtd"  onClick={() => addQtdLivro(id)}><span>+</span></button>
                 </div>
-                <div>
+                <div className="preco-carrinho">
+                    
+                    <section className="delete" onClick={() => deletaLivro(id) }>
+                    <DeleteFilled />
+                    </section>
                     <h2>{formataValor(preco * qtd)}</h2>
                 </div>                
-            </section>
-            <section className="delete" onClick={() => deletaLivro(id) }>
-            <DeleteFilled />
             </section>
         </div>
     )
